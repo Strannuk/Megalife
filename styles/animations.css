@@ -1,0 +1,133 @@
+.header__informationBlock-navigation-list-item:hover {
+  color: red;
+  border-bottom: 2px solid red;
+}
+
+.header__informationBlock-navigation-list-item-link:focus{
+  border: none;
+  outline: none;
+}
+
+.header__informationBlock-navigation-list-item-link:focus-visible{
+  color: red;
+  border-bottom: 4px solid red;
+  padding-bottom:4px;
+}
+
+.header__informationBlock-navigation-list-item:focus-within {
+  border: none; 
+}
+
+.header__informationBlock-address-tel-number:hover {
+  border-bottom: 2px solid red;
+  color: red;
+}
+
+.header__informationBlock-address-tel-number:focus {
+  outline:none;
+}
+
+.header__informationBlock-address-tel-number:focus-visible {
+  border-bottom: 4px solid red;
+  color: red;
+}
+
+.button-stilization--red:hover {
+  background-color: transparent;
+  border: red 2px solid;
+  color: red;
+}
+
+.button-stilization--red:focus-visible {
+  background-color: transparent;
+  border: red 2px solid;
+  color: red;
+}
+
+.button-stilization--white:hover {
+  background-color: red;
+  border: red 2px solid;
+  color: white;
+}
+
+.button-stilization--white:focus-visible {
+  background-color: red;
+  border: red 2px solid;
+  color: white;
+}
+
+.feedback__text-decoration:hover {
+  color: rgba(255, 0 , 0, 0.55);
+  border-bottom: 2px solid rgba(255, 0 , 0, 0.55);
+}
+
+.feedback__text-decoration:focus {
+  border: none;
+  outline: none;
+}
+
+.feedback__text-decoration:focus-visible {
+  color: rgba(255, 0 , 0, 0.55);
+  border-bottom: 2px solid rgba(255, 0 , 0, 0.55);
+}
+
+.dropdown-text-link:hover {
+  border-bottom: 2px solid red;
+}
+
+.dropdown-text-link:focus {
+  outline: none;
+}
+
+.dropdown-text-link:focus-visible {
+  border-bottom: 2px solid red;
+}
+
+.information__text-address-list-item-decoration:hover {
+  color:red;
+  border-bottom: 2px solid red;
+}
+
+.information__text-address-list-item-decoration:focus {
+  outline: none;
+}
+
+.information__text-address-list-item-decoration:focus-visible {
+  color:red;
+  border-bottom: 2px solid red;
+}
+
+.feedback__input:focus-visible {
+  outline: 2px solid red;
+}
+
+.feedback__textarea:focus-visible {
+  outline: 2px solid red;
+}
+
+.footer__contact-list-links:hover {
+  border-bottom: 2px solid white;
+}
+
+.footer__contact-list-links:focus {
+  outline: none;
+}
+
+.footer__contact-list-links:focus-visible {
+  border-bottom: 2px solid white;
+}
+
+.footer__documents-list-item-docs:hover {
+ text-decoration: underline 2px solid white;
+ text-underline-offset: 5px; 
+}
+
+.footer__documents-list-item-docs:focus {
+  outline: none;
+}
+
+.footer__documents-list-item-docs:focus-visible {
+   text-decoration: underline 2px solid white;
+ text-underline-offset: 5px; 
+   
+}

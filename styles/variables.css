@@ -1,0 +1,31 @@
+/* :root {
+  --Inter: "Inter-Variable", sans-serif;
+  --PressStart2P: "PressStart2P", fantasy;
+  --main-text-weight: 400;
+  --main-header-weight: 700;
+  --main-font-size: 18px;
+  --text-font-size: 14px;
+  --header-size: 100%;
+  --card-size: 100%;
+  --background-image: repeating-linear-gradient(
+      90deg,
+      #d3d3d3 0px,
+      #d3d3d3 2px,
+      transparent 2px,
+      transparent 4px
+    ),
+    repeating-linear-gradient(
+      #d3d3d3 0px,
+      #d3d3d3 2px,
+      transparent 2px,
+      transparent 4px
+    ),
+    linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a 100%);
+  --background-color: #fff;
+  --decoration-color: #111;
+  --text-decoration-color: #fff;
+  --contour-color: #000;
+  --animation-fill-color: red;
+  --body-color: red;
+  --accent-color: black;
+} */

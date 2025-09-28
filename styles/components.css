@@ -1,0 +1,247 @@
+/* Стилизация маркера для списка - маркер точка красная */
+
+.marker-decoration {
+  position: relative;
+  padding-left: 22px;
+}
+
+.marker-decoration::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 0;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #f23131;
+}
+
+.marker-decoration::after{
+  content: "";
+  position: absolute;
+  top: 9px;
+  left: 4px;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 2px white;
+  background-color: #f23131;
+}
+
+/* Конец  */
+
+/* Стилизация маркера для списка - маркер красная галочка */
+
+  .marker-decoration-check {
+  position: relative;
+  padding-left: 37px;
+}
+
+.marker-decoration-check::after {
+  content: "";
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  width: 10px;
+  height: 25px;
+  border-right: 2px solid red;
+  border-bottom: 2px solid red;
+  transform: translateY(-80%) rotate(45deg);
+}
+
+.marker-decoration-check::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 24px;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+}
+
+/* Конец  */
+
+/* Стилизация кнопки - красная  */
+
+.button-stilization--red {
+  border: 2px solid red;
+  border-radius: 16px;
+  padding-block: 18px;
+  background-color: red;
+  color: white;
+  inline-size: 100%;
+  text-align: center;
+  cursor: pointer;
+   transition: all 0.1s ease-in-out;
+}
+
+/* Конец  */
+
+/* Стилизация кнопки - белая  */
+
+.button-stilization--white {
+  border: 2px solid red;
+  border-radius: 16px;
+  padding-block: 18px;
+  background-color: white;
+  color:red;
+  inline-size: 100%;
+  text-align: center;
+  cursor: pointer;
+   transition: all 0.1s ease-in-out;
+}
+
+/* Конец  */
+
+/* Декоративная полоска для заголовков красная*/
+
+.decoration-line-red {
+  position: relative;
+  display: inline;
+}
+ 
+.decoration-line-red::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width:100%;
+  height: 4px;
+  background: linear-gradient(92deg, #ed1c24 0%, #ed3f1c 100%);
+}
+
+/* Конец  */
+
+/* Декоративная полоска для заголовков белая*/
+
+.decoration-line-white {
+  position: relative;
+  display: inline-block; 
+}
+
+.decoration-line-white::after {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width:100%;
+  height: 2px;
+  background-color: white;
+}
+
+/* Конец  */
+
+/* PDF Иконка */
+
+.icon-pdf {
+  position: relative;
+  display: inline-block;
+}
+
+.icon-pdf::before {
+  content: "PDF";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  border: 1.5px solid #fff;
+  border-radius: 6px;
+  font-size: 6px;
+  font-weight: bold;
+}
+
+/* Конец */
+
+/* Кнопка для выпадающего списка красная на белом фоне */
+
+.dropdown-button-red {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background-color: white;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dropdown-button-red::after {
+  content: '';
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-left: 2px solid red;
+  border-bottom: 2px solid red;
+  transform: rotate(-45deg);
+}
+
+/* Конец */
+
+/* Красная звезда над кнопкой */
+
+.red-stars {
+  position: relative;
+}
+
+.red-stars::before {
+  content: "★";
+  position: absolute;
+  top: -155%;
+  left: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 63px;
+  height: 63px;
+  border: 2px solid red;
+  border-radius: 50%;
+  color: red;
+  font-size: 40px;
+  background: white;
+  transform: translateX(-50%);
+}
+
+/* Конец */
+
+/* Текст заголовков */
+
+.big-text {
+  font-weight: 700;
+  font-size: 2.625rem;
+  text-transform: uppercase;
+}
+
+/* Конец */
+
+/* Заголовок карточек предоставляемых услуг */
+
+.service-card-title {
+  color: #0a0909;
+  font-weight: 700;
+  font-size: 42px;
+  text-transform: uppercase;
+}
+
+/* Конец */
+
+/* Скролл прогресс бар */
+
+#scrollProgress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0%; 
+  height: 5px;
+  background-color: #ff0000; 
+  z-index: 9999;
+  transition: width 0.1s ease-out;
+}
+
+/* Конец */

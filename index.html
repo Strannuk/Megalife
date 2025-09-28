@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Мегалайф</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./images/favicon16x16.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      type="image/png"
+      sizes="180x180"
+      href="./images/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="./images/favicon-mobile.png"
+    />
+    <link rel="stylesheet" href="./fonts/fonts.css" />
+    <link rel="stylesheet" href="./styles/variables.css" />
+    <link rel="stylesheet" href="./styles/globals.css" />
+    <link rel="stylesheet" href="./styles/components.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/animations.css" />
+  </head>
+
+  <body class="page">
+    <div id="scrollProgress"></div>
+    <header class="header">
+      <div class="header__informationBlock">
+        <a class="header__informationBlock-logo big-text" href="#0">
+          <img src="./images/logo.svg" alt="Мегалайф" />
+          Megalife
+        </a>
+        <h1 class="header__informationBlock-title big-text">
+          Безопасность вашего дома и бизнеса
+        </h1>
+        <p class="header__informationBlock-text">
+          Установка и обслуживание IP-домофонов, систем контроля доступа и
+          видеонаблюдения
+        </p>
+        <nav class="header__informationBlock-navigation">
+          <ul class="header__informationBlock-navigation-list">
+            <li class="header__informationBlock-navigation-list-item">
+              <a class="header__informationBlock-navigation-list-item-link" href="#video">Видеонаблюдение</a>
+            </li>
+            <li class="header__informationBlock-navigation-list-item">
+              <a class="header__informationBlock-navigation-list-item-link" href="#skyd">СКУД</a>
+            </li>
+            <li class="header__informationBlock-navigation-list-item">
+              <a class="header__informationBlock-navigation-list-item-link" href="#domofon">IP-Домофония</a>
+            </li>
+            <li class="header__informationBlock-navigation-list-item">
+              <a class="header__informationBlock-navigation-list-item-link" href="#ip-tv">Кабельное телевидение</a>
+            </li>
+          </ul>
+        </nav>
+        <address>
+          <ul class="header__informationBlock-address">
+            <li class="header__informationBlock-address-tel">
+              <a class="header__informationBlock-address-tel-number" href="tel:+79782001515">+7 978 200-15-15</a>
+            </li>
+            <li class="header__informationBlock-address-item">
+              с. Мирное ул. Крымской Весны, Симферополь
+            </li>
+          </ul>
+        </address>
+      </div>
+      <picture class="header__imageContainer">
+        <img
+          class="header__imageContainer-image"
+          src="./images/header.png"
+          alt="Камера"
+        />
+      </picture>
+    </header>
+    <main class="main">
+      <section class="why-us">
+        <h2 class="why-us__title big-text">Почему выбирают нас</h2>
+        <ul class="why-us__list">
+          <li class="why-us__list-item why-us__item--proffesional">
+            <p class="why-us__list-item-text">
+              Профессиональная установка и регулярное обслуживание
+            </p>
+          </li>
+          <li class="why-us__list-item why-us__item--experience">
+            <p class="why-us__list-item-text">
+              Большой опыт работы и проверенные решения
+            </p>
+          </li>
+          <li class="why-us__list-item why-us__item--individual">
+            <p class="why-us__list-item-text">
+              Индивидуальный подход к каждому объекту
+            </p>
+          </li>
+          <li class="why-us__list-item why-us__item--fast">
+            <p class="why-us__list-item-text">
+              Быстрая поддержка и прозрачные цены
+            </p>
+          </li>
+          <li class="why-us__list-item why-us__item--time">
+            <p>Спокойствие и экономия времени</p>
+            <button
+              class="why-us__button button-stilization--red"
+              data-feedback
+            >
+              Оставить заявку
+            </button>
+          </li>
+        </ul>
+      </section>
+      <section class="services">
+        <div class="services__header">
+          <h2 class="services__header-title">наши услуги</h2>
+          <p class="services__header-text">
+            Мы предлагаем комплексные услуги по установке и обслуживанию систем
+            безопасности для компаний. Домофоны, контроль доступа, камеры
+            видеонаблюдения — все под ключ.
+          </p>
+        </div>
+        <article class="surveillance" id="video">
+          <div>
+            <h3
+              class="surveillance__header decoration-line-red service-card-title"
+            >
+              Видеонаблюдение
+            </h3>
+            <p class="surveillance__text">
+              Эффективный и доступный способ обеспечения безопасности офиса,
+              дома, магазина, подъезда или любой другой территории
+            </p>
+            <ul class="surveillance__list">
+              <li class="marker-decoration">
+                контроль в режиме online из любой точки мира
+              </li>
+              <li class="marker-decoration">
+                качественное изображение и простое управление
+              </li>
+              <li class="marker-decoration">
+                просмотр с компьютера, планшета или даже смартфона
+              </li>
+              <li class="marker-decoration">
+                удаленное хранение видеоматериалов и доступ 24/7
+              </li>
+              <li class="marker-decoration">
+                высочайший уровень конфиденциальности
+              </li>
+            </ul>
+            <button
+              class="surveillance__button button-stilization--white"
+              data-feedback
+            >
+              Оставить заявку
+            </button>
+          </div>
+          <picture>
+            <img
+              class="surveillance__image"
+              src="./images/Camera.png"
+              alt="Видеонаблюдение"
+            />
+          </picture>
+        </article>
+        <article class="control" id="skyd">
+          <picture class="control__image">
+            <img
+              class="control__image-photo"
+              src="./images/SKYD.png"
+              alt="Видеонаблюдение"
+            />
+          </picture>
+          <div class="control__information">
+            <h3
+              class="control__information-header decoration-line-red service-card-title"
+            >
+              система контроля и управления доступом
+            </h3>
+            <p class="control__information-text">
+              Контролируйте, кто и когда входит в ваш офис, дом или на
+              территорию. Полная прозрачность — от входа по карте или отпечатку
+              пальца до интеграции с камерами и домофоном
+            </p>
+            <ul class="control__information-list">
+              <li class="marker-decoration">
+                вход по ключам-картам, брелокам или биометрии
+              </li>
+              <li class="marker-decoration">
+                гибкая настройка прав доступа для сотрудников и гостей
+              </li>
+              <li class="marker-decoration">
+                автоматический учёт времени прихода и ухода
+              </li>
+              <li class="marker-decoration">
+                интеграция с видеонаблюдением и домофонией
+              </li>
+              <li class="marker-decoration">
+                подробные отчёты и история событий
+              </li>
+              <li class="marker-decoration">
+                управление шлагбаумом с вашего телефона
+              </li>
+            </ul>
+            <button
+              class="control__button button-stilization--red"
+              data-feedback
+            >
+              Оставить заявку
+            </button>
+          </div>
+        </article>
+        <article class="surveillance" id="domofon">
+          <div>
+            <h3
+              class="surveillance__header decoration-line-red service-card-title"
+            >
+              ip-домофония
+            </h3>
+            <p class="surveillance__text">
+              Идеальная система безопасности для домов и офисов, помогающая
+              идентифицировать гостей по голосу и удаленно открывать двери
+            </p>
+            <ul class="surveillance__list">
+              <li class="marker-decoration">
+                управление с помощью
+                <img src="./images/icon-siri.svg" alt="Сири" /> Сири и
+                <img src="./images/icon-alisa.svg" alt="Алиса" /> Алисы
+              </li>
+              <li class="marker-decoration">
+                видеонаблюдение во дворе и подъезде
+              </li>
+              <li class="marker-decoration">
+                ключи от подъезда всегда с собой, в том числе одноразовые
+              </li>
+              <li class="marker-decoration">
+                видеовызовы с домофона на вашем смартфоне
+              </li>
+              <li class="marker-decoration">
+                сохранение истории вызовов домофона
+              </li>
+            </ul>
+            <button
+              class="surveillance__button button-stilization--white"
+              data-feedback
+            >
+              Оставить заявку
+            </button>
+          </div>
+          <picture>
+            <img
+              class="surveillance__image"
+              src="./images/Domofon.png"
+              alt="Домофон"
+            />
+          </picture>
+        </article>
+        <article class="control" id="ip-tv">
+          <picture class="control__image"
+            ><img
+              class="control__image-photo"
+              src="./images/TV.png"
+              alt="Видеонаблюдение"
+            />
+          </picture>
+          <div class="control__information">
+            <h3
+              class="control__information-header decoration-line-red service-card-title"
+            >
+              кабельное телевидение
+            </h3>
+            <p class="control__information-text">
+              Широкий выбор каналов в отличном качестве — от новостей и спорта
+              до фильмов и сериалов. Надёжный сигнал без перебоев и возможность
+              подобрать пакет под ваши интересы
+            </p>
+            <ul class="control__information-list">
+              <li class="marker-decoration">
+                130 каналов в SD (стандартном) качестве
+              </li>
+              <li class="marker-decoration">
+                высота качества передаваемого сигнала, четкость картинки и
+                качество звука
+              </li>
+              <li class="marker-decoration">
+                отсутствие преград при переадресации сигнала и защита от помех
+              </li>
+              <li class="marker-decoration">
+                минимальный риск поломки оборудования
+              </li>
+              <li class="marker-decoration">редкость сбоя сигнала</li>
+              <li class="marker-decoration">
+                устранение проблем в наикратчайшие сроки
+              </li>
+              <li class="marker-decoration">
+                неограниченность подключения телевизоров к одному кабелю, при
+                сохранении независимости просмотра каналов
+              </li>
+            </ul>
+            <button
+              class="control__button button-stilization--red"
+              data-feedback
+            >
+              Оставить заявку
+            </button>
+          </div>
+        </article>
+      </section>
+      <section class="paid">
+        <h2 class="visually-hidden">Тарифы и оплата</h2>
+        <div class="paid__tarifs">
+          <h3 class="paid__tarifs-title big-text decoration-line-red">
+            Тарифы
+          </h3>
+          <ul class="paid__tarifs-list">
+            <li class="paid__tarifs-list-item">
+              <article class="paid__tarifs-card">
+                <div class="paid__tarifs-card-container">
+                  <h4 class="paid__tarifs-card-title">Кабельное телевидение</h4>
+                  <p class="paid__tarifs-card-price">250 руб / мес / кв</p>
+                </div>
+                <ul class="paid__tarifs-card-list">
+                  <li
+                    class="paid__tarifs-card-list-item marker-decoration-check"
+                  >
+                    более 100 каналов
+                  </li>
+                  <li
+                    class="paid__tarifs-card-list-item marker-decoration-check"
+                  >
+                    устранение проблем в кратчайшие сроки
+                  </li>
+                </ul>
+              </article>
+            </li>
+            <li class="paid__tarifs-list-item">
+              <article class="paid__tarifs-card">
+                <div
+                  class="paid__tarifs-card-container tarifs-card-container-standart"
+                >
+                  <h4
+                    class="paid__tarifs-card-title tarifs-card-title-standart"
+                  >
+                    Стандартный
+                  </h4>
+                  <p class="paid__tarifs-card-price">299 руб / мес / кв</p>
+                </div>
+                <ul class="paid__tarifs-card-list">
+                  <li
+                    class="paid__tarifs-card-list-item marker-decoration-check"
+                  >
+                    Обслуживание IP-домофонии
+                  </li>
+                  <li
+                    class="paid__tarifs-card-list-item marker-decoration-check"
+                  >
+                    Услуга обслуживания систем контроля въезда (выезда) на
+                    придомовую территорию
+                  </li>
+                  <li
+                    class="paid__tarifs-card-list-item marker-decoration-check"
+                  >
+                    Услуга обслуживания телематического оборудования по
+                    предоставлению услуги видеонаблюдения, удаленного доступа
+                    видеонаблюдению на территории и архиву видеозаписи с камер
+                    наблюдения
+                  </li>
+                </ul>
+                <button
+                  class="button-stilization--red tarifs-card-list-item-button"
+                  data-feedback
+                >
+                  Оставить заявку
+                </button>
+              </article>
+            </li>
+            <li class="paid__tarifs-list-item tarifs-pro">
+              <article class="paid__tarifs-card">
+                <div
+                  class="paid__tarifs-card-container tarifs-card-container-pro"
+                >
+                  <h4 class="paid__tarifs-card-title tarifs-card-title-pro">
+                    Продвинутый
+                  </h4>
+                  <p class="paid__tarifs-card-price tarifs-card-pro">
+                    499 руб / мес / кв
+                  </p>
+                </div>
+                <ul class="paid__tarifs-card-list">
+                  <li
+                    class="paid__tarifs-card-list-item marker-decoration-check"
+                  >
+                    Обслуживание IP-домофонии
+                  </li>
+                  <li
+                    class="paid__tarifs-card-list-item marker-decoration-check"
+                  >
+                    Услуга обслуживания систем контроля въезда (выезда) на
+                    придомовую территорию
+                  </li>
+                  <li
+                    class="paid__tarifs-card-list-item marker-decoration-check"
+                  >
+                    Услуга обслуживания телематического оборудования по
+                    предоставлению услуги видеонаблюдения, удаленного доступа
+                    видеонаблюдению на территории и архиву видеозаписи с камер
+                    наблюдения
+                  </li>
+                  <li
+                    class="paid__tarifs-card-list-item marker-decoration-check"
+                  >
+                    Кабельное телевидение
+                  </li>
+                </ul>
+                <button
+                  class="button-stilization--red tarifs-card-list-item-button red-stars"
+                  data-feedback
+                >
+                  Оставить заявку
+                </button>
+              </article>
+            </li>
+          </ul>
+        </div>
+        <div class="paid__methods">
+          <h3 class="paid__methods-title decoration-line-red big-text">
+            Способы оплаты
+          </h3>
+          <ul class="dropdown-list">
+            <li class="dropdown-list--decoration">
+              <div class="dropdown-list-item" onclick="toggleDropdown(this)">
+                <span>PayBerry</span>
+                <button
+                  class="dropdown-list-item-button dropdown-button-red"
+                ></button>
+              </div>
+              <div class="dropdown">
+                <ul class="dropdown-text">
+                  <li class="marker-decoration">
+                    Перейдите по
+                    <a
+                      class="dropdown-text-link"
+                      href="payberry.ru/pay/5959"
+                      target="_blank"
+                      >ссылке</a
+                    >.
+                  </li>
+                  <li class="marker-decoration">
+                    Введите номер лицевого счета и действуйте согласно
+                    подсказкам на сайте.
+                  </li>
+                  <li class="marker-decoration">
+                    Ваш платеж успешно совершен!
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="dropdown-list--decoration">
+              <div class="dropdown-list-item" onclick="toggleDropdown(this)">
+                <span>РНКБ</span>
+                <button
+                  class="dropdown-list-item-button dropdown-button-red"
+                ></button>
+              </div>
+              <div class="dropdown">
+                <ul class="dropdown-text">
+                  <li class="marker-decoration">
+                    В категории «ИНТЕРНЕТи TV» выберите «Мегалайф»
+                  </li>
+                  <li class="marker-decoration">
+                    Заполните поля «Идентификатор плательщика» (это номер Вашего
+                    договора — лицевого счета)
+                  </li>
+                  <li class="marker-decoration">
+                    Заполните поля «Период оплаты» (заполнение этих полей —
+                    требование банка, независимо от выбранных дат деньги будут
+                    зачислены на лицевой счет)
+                  </li>
+                  <li class="marker-decoration">
+                    Укажите сумму платежа, выбрав карту с которой будут списаны
+                    денежные средства, и подтвердите операцию кодом из СМС.
+                  </li>
+                  <li class="marker-decoration">
+                    Ваш платеж успешно совершен!
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+          <p class="paid__methods-text">
+            Возможно оформление рассрочки в индивидуальном порядке!
+          </p>
+        </div>
+      </section>
+      <section class="information">
+        <div class="information__map">
+          <script
+            async
+            src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A02f248f26ef41e8fff6e5e590913915aaf19cb1722cd089f22d5505d8cf2be13&amp;width=100%25&amp;height=613&amp;lang=ru_RU&amp;scroll=true"
+          ></script>
+        </div>
+        <div class="information__text">
+          <img
+            class="information__text-logo"
+            src="./images/logowithtext.svg"
+            alt="Мегалайф"
+          />
+          <h2 class="information__text-title">Наши контакты</h2>
+          <address>
+            <ul class="information__text-address-list">
+              <li class="information__text-address-list-item">
+                с. Мирное ул. Крымской Весны, Симферополь
+              </li>
+              <li class="information__text-address-list-item">
+                <a class="information__text-address-list-item-decoration" href="tel:+79782001515">+7 978 200-15-15</a>
+              </li>
+              <li class="information__text-address-list-item">
+                <a class="information__text-address-list-item-decoration" href="mailto:admin@crimea.mega-life.ru"
+                  >admin@crimea.mega-life.ru</a
+                >
+              </li>
+              <li class="information__text-address-list-item">
+                <a class="information__text-address-list-item-decoration" href="https://vk.com/megalifecrimea" target="_blank"
+                  >ВКонтакте</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+      </section>
+      <section class="feedback" id="feedback">
+        <h2 class="feedback__title decoration-line-red big-text">
+          Обратная связь
+        </h2>
+        <p class="feedback__subtitle">
+          Оставьте заявку и мы перезвоним вам в самое ближайшее время
+        </p>
+        <form action="#" class="feedback__form">
+          <div class="feedback__form-input">
+            <input
+              type="text"
+              class="feedback__input"
+              placeholder="Ваше имя"
+              required
+            />
+            <input
+              type="tel"
+              class="feedback__input"
+              placeholder="Номер телефона"
+              required
+            />
+            <textarea
+              class="feedback__textarea"
+              placeholder="Сообщение"
+            ></textarea>
+          </div>
+          <div class="feedback__actions">
+            <button
+              type="submit"
+              class="feedback__button button-stilization--red"
+            >
+              Отправить заявку
+            </button>
+            <span>
+              Нажимая, вы соглашаетесь с
+              <a 
+                class="feedback__text-decoration"
+                href="./file/Лицензия_Услуги_связи_по_передаче_данных,_за_исключением_услуг_связи.pdf"
+                target="_blank"
+                >правилами передачи данных и политикой конфиденциальности</a
+              >
+            </span>
+          </div>
+        </form>
+      </section>
+      <section class="faq">
+        <h2 class="faq__title decoration-line-red big-text">
+          часто задаваемые вопросы
+        </h2>
+        <ul class="dropdown-list">
+          <li class="dropdown-list--decoration">
+            <div class="dropdown-list-item" onclick="toggleDropdown(this)">
+              <span>Сколько лет компания работает на рынке?</span>
+              <button
+                class="dropdown-list-item-button dropdown-button-red"
+              ></button>
+            </div>
+            <div class="dropdown">
+              <ul class="dropdown-text">
+                <li class="marker-decoration">
+                  Мы успешно работаем с 2022 года, постоянно развиваясь и
+                  внедряя современные решения в сфере безопасности и комфорта
+                  жилых комплексов.
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="dropdown-list--decoration">
+            <div class="dropdown-list-item" onclick="toggleDropdown(this)">
+              <span
+                >Какие технологии и бренды оборудования вы используете?</span
+              >
+              <button
+                class="dropdown-list-item-button dropdown-button-red"
+              ></button>
+            </div>
+            <div class="dropdown">
+              <ul class="dropdown-text">
+                <p>Мы работаем только с проверенными и надежными системами:</p>
+                <li class="marker-decoration">
+                  Rubetek — современные домофонные комплексы;
+                </li>
+                <li class="marker-decoration">
+                  Alutech — надежные и долговечные шлагбаумы;
+                </li>
+                <li class="marker-decoration">
+                  HiWatch — видеокамеры с высоким качеством изображения.
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="dropdown-list--decoration">
+            <div class="dropdown-list-item" onclick="toggleDropdown(this)">
+              <span>В каких городах/регионах вы работаете?</span>
+              <button
+                class="dropdown-list-item-button dropdown-button-red"
+              ></button>
+            </div>
+            <div class="dropdown">
+              <ul class="dropdown-text">
+                <li class="marker-decoration">
+                  Наша компания оказывает услуги в селе Мирное, Симферопольский
+                  район, в жилом комплексе Жигулина Роща.
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="dropdown-list--decoration">
+            <div class="dropdown-list-item"
+            onclick="toggleDropdown(this)"
+                type="button">
+              <span>Как проходит процесс покупки/оформления услуги?</span>
+              <button
+                class="dropdown-list-item-button dropdown-button-red"
+              ></button>
+            </div>
+            <div class="dropdown">
+              <ul class="dropdown-text">
+                <p>Мы выстроили понятный и прозрачный процесс:</p>
+                <li class="marker-decoration">
+                  Проведение ОСС (Общего собрания собственников);
+                </li>
+                <li class="marker-decoration">
+                  Заключение договора обслуживания с управляющей компанией или
+                  ТСЖ;
+                </li>
+                <li class="marker-decoration">
+                  Заключение индивидуального договора с жильцами для
+                  предоставления услуг.
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__information">
+        <div class="footer__information-logo">
+          <img
+            class="footer__information-logo-image"
+            src="./images/logo.svg"
+            alt="Мегалайф"
+          />
+          <div class="footer__information-logo-text">
+            <h2 class="footer__information-logo-text-title">megalife</h2>
+            <p class="footer__information-logo-text-text">
+              безопасность вашего дома и бизнеса
+            </p>
+          </div>
+        </div>
+        <address class="footer__contact">
+          <p class="footer__contact-header decoration-line-white">Контакты</p>
+          <ul class="footer__contact-list">
+            <li>
+              <a class="footer__contact-list-links" href="https://vk.com/megalifecrimea" target="_blank"
+                >ВКонтакте</a
+              >
+            </li>
+            <li>
+              <a class="footer__contact-list-links" href="tel:+79782001515">+7 978 200-15-15</a>
+            </li>
+            <li>
+              <a class="footer__contact-list-links" href="mailto:admin@crimea.mega-life.ru"
+                >admin@crimea.mega-life.ru</a
+              >
+            </li>
+          </ul>
+        </address>
+      </div>
+      <div class="footer__documents">
+        <p class="footer__documents-title decoration-line-white">Документы</p>
+        <ul class="footer__documents-list">
+          <li class="footer__documents-list-item">
+            <a
+              class="icon-pdf footer__documents-list-item-docs"
+              href="./file/Лицензия_Телематические_услуги_связи.pdf"
+              target="_blank"
+              >Лицензия - Телематические услугисвязи</a
+            >
+          </li>
+          <li class="footer__documents-list-item">
+            <a
+              class="icon-pdf footer__documents-list-item-docs"
+              href="./file/Лицензия_Услуги_связи_по_предоставлению_каналов_связи.pdf"
+              target="_blank"
+              >Лицензия - Услуги связи по предоставлению каналов связи</a
+            >
+          </li>
+          <li class="footer__documents-list-item">
+            <a
+              class="icon-pdf footer__documents-list-item-docs"
+              href="./file/Лицензия_Услуги_связи_по_передаче_данных,_за_исключением_услуг_связи.pdf"
+              target="_blank"
+              >Лицензия - Услуги связи по передаче данных, за исключением услуг
+              связи</a
+            >
+          </li>
+          <li class="footer__documents-list-item">
+            <a
+              class="icon-pdf footer__documents-list-item-docs"
+              href="./file/Политика+обработки+и+защиты+ПД+ООО+Мегалаиф.pdf"
+              target="_blank"
+              >Политика обработки и защиты ПД ООО Мегалайф</a
+            >
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <script src="./script/dropdown.js"></script>
+    <script src="./script/feedbackButton.js"></script>
+    <script src="./script/scrollprogresbar.js"></script>
+  </body>
+</html>
