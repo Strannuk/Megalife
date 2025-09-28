@@ -336,25 +336,25 @@
 }
 
 .dropdown-list-item {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr min-content;
+  gap:15px;
+  align-items: center;
   border-top-left-radius: 16px;
   border-top-right-radius: 16px;
-  padding-inline-start: 25px;
+  padding-inline: 25px;
   padding-block: 15px;
   background-color: #f5f5f5;
   cursor: pointer;
 }
 
-.dropdown-list-item-button {
-  margin-inline-end: 25px;
-}
-
 .dropdown {
-  display: none;
-  padding: 25px;
+  height: 0;
   overflow: hidden;
-  transition: max-height 0.3s ease;
+  padding-inline: 25px;
+  padding-block-start: 0;
+  padding-block-end: 0;
+  transition: height 0.4s ease, padding-block 0.4s ease;
 }
 
 .dropdown-text {
@@ -368,7 +368,8 @@
 }
 
 .show-dropdown {
-  display: block;
+ padding-block-start: 25px;
+  padding-block-end: 25px;
 }
 
 .paid__methods-text {
@@ -762,6 +763,11 @@
 }
 
 @media (width <=767px) {
+
+  .page {
+    font-size: clamp(0.875rem, 0.6365rem + 1.0178vw, 1.125rem);
+  }
+
   .header__informationBlock {
     padding: 25px 25px 0;
   }
@@ -772,13 +778,11 @@
 
   .header__informationBlock-text {
     padding-block-end: 85px;
-    font-size: clamp(0.875rem, 0.6365rem + 1.0178vw, 1.125rem);
   }
 
   .header__informationBlock-address {
     flex-direction: column;
     gap: 20px;
-    font-size: clamp(0.875rem, 0.6365rem + 1.0178vw, 1.125rem);
   }
   
   .header__informationBlock-navigation {
@@ -809,7 +813,6 @@
   .why-us__list-item {
     gap: 24px;
     padding: 25px;
-    font-size: clamp(0.875rem, 0.6365rem + 1.0178vw, 1.125rem);
   }
 
   .why-us__list-item::before {
@@ -839,14 +842,9 @@
     font-size: clamp(2.25rem, 0.5802rem + 7.1247vw, 4rem);
   }
 
-  .services__header-text {
-    font-size: clamp(0.875rem, 0.6365rem + 1.0178vw, 1.125rem);
-  }
-
   .surveillance {
     gap: 25px;
     padding: 0;
-    font-size: clamp(0.875rem, 0.6365rem + 1.0178vw, 1.125rem);
   }
 
   .surveillance__header {
@@ -855,7 +853,6 @@
 
   .control {
     margin-block: 30px;
-    font-size: clamp(0.875rem, 0.6365rem + 1.0178vw, 1.125rem);
   }
 
   .control__information {
@@ -869,7 +866,6 @@
 
   .paid {
     padding: 0;
-    font-size: clamp(0.875rem, 0.6365rem + 1.0178vw, 1.125rem);
   }
 
   .paid__tarifs {
@@ -905,12 +901,7 @@
   .information__text {
     position: static;
     padding: 15px;
-    font-size: clamp(0.875rem, 0.6365rem + 1.0178vw, 1.125rem);
     background-color: #f6f6f6;
-  }
-
-  .information__text-title {
-    font-size: clamp(0.875rem, 0.2786rem + 2.5445vw, 1.5rem);
   }
 
   .feedback {
@@ -956,9 +947,6 @@
     font-size: clamp(1.6875rem, 2.0758rem + -1.6567vw, 1.2805625rem);
   }
 
-  .footer__information-logo-text-text {
-    font-size: clamp(0.875rem, 1.1862rem + -1.328vw, 0.5488125rem);
-  }
 }
 
 

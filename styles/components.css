@@ -180,6 +180,11 @@
   border-left: 2px solid red;
   border-bottom: 2px solid red;
   transform: rotate(-45deg);
+  transition: transform 0.3s ease;
+}
+
+.dropdown-list--decoration.open .dropdown-button-red::after {
+  transform: rotate(135deg);
 }
 
 /* Конец */
