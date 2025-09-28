@@ -591,17 +591,11 @@
   }
 
   .why-us__list-item-text {
-    /* padding-bottom: 50px; Вернуть эту !!!*/
-    padding-bottom: 30px;
+    padding-bottom: 50px;
   }
 
   .services__header {
     padding-inline: 50px;
-  }
-
-  .services__header-title {
-    padding-bottom: 33px;
-    /* Убрать  */
   }
 
   .surveillance {
