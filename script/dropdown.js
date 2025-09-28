@@ -14,7 +14,7 @@ function toggleDropdown(button) {
     li.classList.add('open'); 
     dropdown.classList.add('show-dropdown');
     const scrollHeight = dropdown.scrollHeight;
-    dropdown.style.height = scrollHeight + 40 + 'px';
+    dropdown.style.height = scrollHeight + 20 + 'px';
   } else {
     li.classList.remove('open');
     dropdown.style.height = '0';
