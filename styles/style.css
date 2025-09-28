@@ -352,8 +352,7 @@
   height: 0;
   overflow: hidden;
   padding-inline: 25px;
-  padding-block-start: 0;
-  padding-block-end: 0;
+  padding-block:0;
   transition: height 0.4s ease, padding-block 0.4s ease;
 }
 
@@ -368,8 +367,7 @@
 }
 
 .show-dropdown {
- padding-block-start: 25px;
-  padding-block-end: 25px;
+padding-block: 20px;
 }
 
 .paid__methods-text {
