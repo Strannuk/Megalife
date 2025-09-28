@@ -8,24 +8,27 @@
 .marker-decoration::before {
   content: "";
   position: absolute;
-  top: 5px;
+  top: 50%;
   left: 0;
   width: 12px;
   height: 12px;
   border-radius: 50%;
   background-color: #f23131;
+  transform: translateY(-50%);
 }
 
-.marker-decoration::after{
+/* Внутренний белый круг и центр красный */
+.marker-decoration::after {
   content: "";
   position: absolute;
-  top: 9px;
+  top: 50%;
   left: 4px;
   width: 4px;
   height: 4px;
   border-radius: 50%;
   box-shadow: 0 0 0 2px white;
   background-color: #f23131;
+  transform: translateY(-50%);
 }
 
 /* Конец  */
