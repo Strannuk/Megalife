@@ -489,7 +489,6 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 100px;
-  margin-bottom: 15px;
   border-radius: 32px;
   padding: 75px 100px;
   background-color: red;
