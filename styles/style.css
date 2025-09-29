@@ -671,10 +671,6 @@
     display: flex;
   }
 
-  .header__informationBlock-menu {
-    display: none;
-  }
-
   .header__imageContainer::before {
     background: linear-gradient(90deg, #f3f3f3 60%, rgba(243, 243, 243, 0) 90%),
       linear-gradient(90deg, #f3f3f3 30%, rgba(243, 243, 243, 0) 120.98%);
@@ -770,6 +766,10 @@
 
   .header__informationBlock {
     padding: 25px;
+  }
+
+  .header__informationBlock-menu {
+    display: none;
   }
 
   .header {
