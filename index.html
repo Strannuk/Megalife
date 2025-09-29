@@ -801,27 +801,27 @@
     <script src="./script/feedbackButton.js" async></script>
     <script src="./script/scrollprogresbar.js" async></script>
     <script src="./script/feedback-form.js"></script>
+    <dialog class="submitted-window" id="submitted__window">
+      <div class="submitted-window__content">
+        <img class="submitted-window__content-image" aria-hidden="true" src="./images/logowithtext.svg" alt="Мегалайф" loading="lazy">
+        <p>
+        <span class="submitted-window__content-message">Спасибо!</span><br>
+          Ваша заявка отправлена, мы скоро с вами свяжемся
+        </p>
+        <button
+        class="button-stilization--red "
+        type="button"
+        onclick="window.submitted__window.close()"
+      >
+        <span class="button__text">Закрыть</span>
+      </button>
+      </div>
+    </dialog>
   </body>
 </html>
 
 
 
-<dialog class="submitted-window" id="submitted__window">
-  <div class="submitted-window__content">
-    <img class="submitted-window__content-image" aria-hidden="true" src="./images/logowithtext.svg">
-    <p>
-    <span class="submitted-window__content-message">Спасибо!</span><br>
-       Ваша заявка отправлена, мы скоро с вами свяжемся
-    </p>
-    <button
-    class="button-stilization--red "
-    type="button"
-    onclick="window.submitted__window.close()"
-  >
-    <span class="button__text">Закрыть</span>
-  </button>
-  </div>
-</dialog>
 
 
     
