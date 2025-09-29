@@ -3,6 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Мегалайф — профессиональная установка и обслуживание IP-домофонов, видеонаблюдения, систем контроля доступа и кабельного телевидения в Симферополе. Безопасность вашего дома и бизнеса под ключ."
+    />
+    <meta name="keywords" content="Мегалайф, видеонаблюдение, IP-домофоны, СКУД, кабельное ТВ, Симферополь, системы безопасности">
+    <meta name="author" content="ООО Мегалайф">
+    <meta name="robots" content="index, follow">
     <title>Мегалайф</title>
     <link
       rel="icon"
@@ -527,10 +534,11 @@
       <section class="information">
         <div class="information__map">
           <iframe
+            title="Карта"
             data-src="https://yandex.ru/map-widget/v1/?um=constructor%3A02f248f26ef41e8fff6e5e590913915aaf19cb1722cd089f22d5505d8cf2be13&amp;source=constructor"
-            width="100%"
+            width="600"
             height="613"
-            style="border: 0"
+            style="width: 100%; border: 0"
             loading="lazy"
           ></iframe>
         </div>
@@ -594,7 +602,7 @@
               class="feedback__input"
               required
               id="phone"
-              placeholder="+7 (___) ___-__-__" 
+              placeholder="+7 (___) ___-__-__"
               maxlength="18"
             />
             <textarea
@@ -655,7 +663,9 @@
             </div>
             <div class="dropdown">
               <ul class="dropdown-text">
-                <p>Мы работаем только с проверенными и надежными системами:</p>
+                <li>
+                  Мы работаем только с проверенными и надежными системами:
+                </li>
                 <li class="marker-decoration">
                   Rubetek — современные домофонные комплексы;
                 </li>
@@ -685,11 +695,7 @@
             </div>
           </li>
           <li class="dropdown-list--decoration">
-            <div
-              class="dropdown-list-item"
-              onclick="toggleDropdown(this)"
-              type="button"
-            >
+            <div class="dropdown-list-item" onclick="toggleDropdown(this)">
               <span>Как проходит процесс покупки/оформления услуги?</span>
               <button
                 class="dropdown-list-item-button dropdown-button-red"
@@ -697,7 +703,7 @@
             </div>
             <div class="dropdown">
               <ul class="dropdown-text">
-                <p>Мы выстроили понятный и прозрачный процесс:</p>
+                <li>Мы выстроили понятный и прозрачный процесс:</li>
                 <li class="marker-decoration">
                   Проведение ОСС (Общего собрания собственников);
                 </li>
@@ -796,35 +802,29 @@
         </ul>
       </div>
     </footer>
-    <script src="./script/YandexMap.js" async></script>
-    <script src="./script/dropdown.js" async></script>
-    <script src="./script/scrollprogresbar.js" async></script>
-    <script src="./script/feedback-form.js"></script>
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="./script/animation.js"></script>
+    <script src="./javascript/scrollreveal.min.js"></script>
+    <script src="./main.js"></script>
     <dialog class="submitted-window" id="submitted__window">
       <div class="submitted-window__content">
-        <img class="submitted-window__content-image" aria-hidden="true" src="./images/logowithtext.svg" alt="Мегалайф" loading="lazy">
+        <img
+          class="submitted-window__content-image"
+          aria-hidden="true"
+          src="./images/logowithtext.svg"
+          alt="Мегалайф"
+          loading="lazy"
+        />
         <p>
-        <span class="submitted-window__content-message">Спасибо!</span><br>
+          <span class="submitted-window__content-message">Спасибо!</span><br />
           Ваша заявка отправлена, мы скоро с вами свяжемся
         </p>
         <button
-        class="button-stilization--red "
-        type="button"
-        onclick="window.submitted__window.close()"
-      >
-        <span class="button__text">Закрыть</span>
-      </button>
+          class="button-stilization--red"
+          type="button"
+          onclick="window.submitted__window.close()"
+        >
+          <span class="button__text">Закрыть</span>
+        </button>
       </div>
     </dialog>
   </body>
 </html>
-
-
-
-
-
-    
-
-

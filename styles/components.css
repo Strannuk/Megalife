@@ -273,13 +273,13 @@
 
 .error {
   border-color: #f23131;
-  box-shadow: 0 0 0 4px rgba(242,49,49,0.4);
+  box-shadow: 0 0 0 4px rgba(242, 49, 49, 0.4);
 }
 
 .error-message {
+  margin-top: 8px;
   color: #f23131;
   font-size: 18px;
-  margin-top: 8px;
   line-height: 1;
 }
 
@@ -291,10 +291,10 @@
   position: fixed;
   top: 50%;
   left: 50%;
+  border: 2px solid red;
+  border-radius: 16px;
   padding: 50px;
   transform: translate(-50%, -50%);
-  border-radius: 16px;
-  border: 2px solid  red;
 }
 
 .submitted-window::backdrop {
@@ -311,15 +311,15 @@
 }
 
 .submitted-window__content-message {
-  text-transform: uppercase;
   font-weight: 600;
+  text-transform: uppercase;
 }
 
 @media (width <=767px) {
   .submitted-window[open] {
-  padding: 25px;
-  width: 75%;
-}
+    width: 75%;
+    padding: 25px;
+  }
 }
 
 /* Конец */
