@@ -19,8 +19,8 @@
 }
 
 .header__informationBlock-address-tel-number:hover {
-  border-bottom: 2px solid red;
-  color: red;
+  text-decoration: underline 2px solid white;
+ text-underline-offset: 5px; 
 }
 
 .header__informationBlock-address-tel-number:focus {
@@ -28,8 +28,8 @@
 }
 
 .header__informationBlock-address-tel-number:focus-visible {
-  border-bottom: 4px solid red;
-  color: red;
+  text-decoration: underline 2px solid white;
+ text-underline-offset: 5px; 
 }
 
 .button-stilization--red:hover {
