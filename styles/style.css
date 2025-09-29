@@ -1,9 +1,9 @@
 .page {
-  padding: 0.9375rem;
+  padding: 15px;
   color: var(--main-text-color, #0a0909);
   font-family: var(--Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif);
   font-weight: 500;
-  font-size: 1.125rem;
+  font-size: 18px;
   font-style: normal;
   line-height: normal;
   background-color: var(--main-background-color, #fff);
@@ -16,21 +16,21 @@
 .header__informationBlock-information {
   display: flex;
   flex-direction: column;
-  gap:15px;
+  gap: 15px;
 }
 
 .header__informationBlock-menu {
   display: flex;
   flex-direction: column;
-  gap:15px;
+  gap: 15px;
 }
 
 .header__informationBlock {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  gap: 200px;
   padding: 6.25rem;
-  gap:200px;
 }
 
 .header__informationBlock-logo {
@@ -60,9 +60,9 @@
 }
 
 .header__informationBlock-address-tel-number {
+  border-radius: 16px;
   padding: 20px 45px;
   background: var(--button-color-type-red, linear-gradient(92deg, #ED1C24 0%, #ED3F1C 100%));
-  border-radius: 16px;
 }
 
 .header__informationBlock-address-item {
@@ -103,7 +103,7 @@
   flex-direction: column;
   align-items: center;
   gap: 27px;
-  border: 2px solid var(--accent-gray-color,#ebebeb);
+  border: 2px solid var(--accent-gray-color, #ebebeb);
   border-radius: 16px;
   padding: 25px;
   background-color: var(--main-background-color, #fff);
@@ -260,7 +260,7 @@
 }
 
 .paid__tarifs-list-item {
-  border: 2px solid var(--accent-gray-color,#ebebeb);
+  border: 2px solid var(--accent-gray-color, #ebebeb);
   border-radius: 16px;
   padding: 50px;
 }
@@ -344,8 +344,8 @@
 .dropdown-list-item {
   display: grid;
   grid-template-columns: 1fr min-content;
-  gap:15px;
   align-items: center;
+  gap: 15px;
   border-top-left-radius: 16px;
   border-top-right-radius: 16px;
   padding-inline: 25px;
@@ -356,9 +356,9 @@
 
 .dropdown {
   height: 0;
-  overflow: hidden;
   padding-inline: 25px;
-  padding-block:0;
+  padding-block: 0;
+  overflow: hidden;
   transition: height 0.4s ease, padding-block 0.4s ease;
 }
 
@@ -430,7 +430,6 @@
 
 .feedback__form {
   padding-block-start: 24px;
-  color: rgba(10, 9, 9, 0.3);
 }
 
 .feedback__form-input {
@@ -440,7 +439,7 @@
 }
 
 .feedback__input {
-  border: 1px solid var(--accent-gray-color,#ebebeb);
+  border: 1px solid var(--accent-gray-color, #ebebeb);
   border-radius: 16px;
   padding: 25px;
   background-color: var(--main-background-color, #fff);
@@ -449,13 +448,17 @@
 .feedback__textarea {
   grid-column: 1/-1;
   height: 136px;
-  border: 1px solid var(--accent-gray-color,#ebebeb);
+  border: 1px solid var(--accent-gray-color, #ebebeb);
   border-radius: 16px;
   padding: 25px;
   font-family: Montserrat;
   font-size: 18px;
   background-color: var(--main-background-color, #fff);
   resize: none;
+}
+
+.feedback__actions-text {
+  color: rgba(10, 9, 9, 0.3);
 }
 
 .feedback__actions {
@@ -515,7 +518,7 @@
 }
 
 .footer__contact {
-  color: var( --white-accent-color, #FFF);
+  color: var(--white-accent-color, #FFF);
 }
 
 .footer__contact-list {
@@ -527,7 +530,7 @@
 
 .footer__documents {
   padding-inline-start: 5px;
-  color: var( --white-accent-color, #FFF);
+  color: var(--white-accent-color, #FFF);
 }
 
 .footer__documents-title {
@@ -553,8 +556,8 @@
 
   .header__informationBlock {
     z-index: 1;
+    gap: 150px;
     padding-inline: 50px;
-    gap:150px
   }
 
   .header__imageContainer {
@@ -576,11 +579,9 @@
     width: 100%;
     height: 100%;
     border-top-right-radius: 32px;
-    background: linear-gradient(
-        90deg,
+    background: linear-gradient(90deg,
         #f3f3f3 40%,
-        rgba(243, 243, 243, 0) 82.98%
-      ),
+        rgba(243, 243, 243, 0) 82.98%),
       linear-gradient(90deg, #f3f3f3 0%, rgba(243, 243, 243, 0) 82.98%);
   }
 
@@ -614,11 +615,9 @@
   }
 
   .control__image::before {
-    background: linear-gradient(
-        270deg,
+    background: linear-gradient(270deg,
         #f3f3f3 0%,
-        rgba(243, 243, 243, 0) 82.98%
-      ),
+        rgba(243, 243, 243, 0) 82.98%),
       linear-gradient(270deg, #f3f3f3 60%, rgba(243, 243, 243, 0) 82.98%);
   }
 
@@ -715,11 +714,9 @@
   }
 
   .control__image::before {
-    background: linear-gradient(
-      0deg,
-      rgba(255, 255, 255, 0.7) 0%,
-      rgba(255, 255, 255, 0.7) 100%
-    );
+    background: linear-gradient(0deg,
+        rgba(255, 255, 255, 0.7) 0%,
+        rgba(255, 255, 255, 0.7) 100%);
   }
 
   .paid__tarifs-card-container {
@@ -736,9 +733,9 @@
   }
 
   .information__text {
+    bottom: 50px;
+    left: 10px;
     background-color: var(--main-background-color, #fff);
-    bottom:50px;
-    left:10px;
   }
 
   .footer {
@@ -794,26 +791,26 @@
   .header__informationBlock-address-tel-number {
     display: inline-block;
   }
-  
+
   .header__informationBlock-navigation {
     display: none;
   }
 
-   .header__imageContainer-image {
-    object-position: 75px -75px;
+  .header__imageContainer-image {
     border-radius: 16px;
+    object-position: 75px -75px;
   }
 
   .header__imageContainer::before {
-   border-radius: 16px;
+    border-radius: 16px;
   }
 
   .why-us {
     display: flex;
     flex-direction: column;
-    padding: 25px 15px;
     gap: 9px;
     border-radius: 16px;
+    padding: 25px 15px;
   }
 
   .why-us__title {
@@ -906,9 +903,9 @@
   }
 
   .information__map {
+    height: 300px;
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0;
-    height: 300px;
   }
 
   .information__text {
@@ -916,7 +913,7 @@
     padding: 15px;
     background-color: #f6f6f6;
   }
-  
+
   .feedback {
     margin-block: 25px;
     padding: 0;
@@ -963,7 +960,7 @@
   .footer__information-logo-text-title {
     font-size: clamp(1.6875rem, 2.0758rem + -1.6567vw, 1.2805625rem);
   }
-
 }
+
 
 

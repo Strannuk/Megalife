@@ -13,7 +13,10 @@
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background: var(--button-color-type-red, linear-gradient(92deg, #ED1C24 0%, #ED3F1C 100%));
+  background: var(
+    --button-color-type-red,
+    linear-gradient(92deg, #ed1c24 0%, #ed3f1c 100%)
+  );
   transform: translateY(-50%);
 }
 
@@ -26,8 +29,11 @@
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  box-shadow: 0 0 0 2px var(--white-accent-color, #FFF);
-  background: var(--button-color-type-red, linear-gradient(92deg, #ED1C24 0%, #ED3F1C 100%));
+  box-shadow: 0 0 0 2px var(--white-accent-color, #fff);
+  background: var(
+    --button-color-type-red,
+    linear-gradient(92deg, #ed1c24 0%, #ed3f1c 100%)
+  );
   transform: translateY(-50%);
 }
 
@@ -35,7 +41,7 @@
 
 /* Стилизация маркера для списка - маркер красная галочка */
 
-  .marker-decoration-check {
+.marker-decoration-check {
   position: relative;
   padding-left: 37px;
 }
@@ -43,25 +49,25 @@
 .marker-decoration-check::after {
   content: "";
   position: absolute;
-  left: 10px;
   top: 50%;
+  left: 10px;
   width: 10px;
   height: 25px;
-  border-right: 2px solid var(--border-main-color, #ED1C24);
-  border-bottom: 2px solid var(--border-main-color, #ED1C24);
+  border-right: 2px solid var(--border-main-color, #ed1c24);
+  border-bottom: 2px solid var(--border-main-color, #ed1c24);
   transform: translateY(-80%) rotate(45deg);
 }
 
 .marker-decoration-check::before {
   content: "";
   position: absolute;
-  left: 0;
   top: 50%;
-  transform: translateY(-50%);
+  left: 0;
   width: 24px;
   height: 24px;
   border: 2px solid #ccc;
   border-radius: 50%;
+  transform: translateY(-50%);
 }
 
 /* Конец  */
@@ -69,15 +75,18 @@
 /* Стилизация кнопки - красная  */
 
 .button-stilization--red {
-  border: 2px solid var(--border-main-color, #ED1C24);
+  border: 2px solid var(--border-main-color, #ed1c24);
   border-radius: 16px;
   padding-block: 18px;
-  background: var(--button-color-type-red, linear-gradient(92deg, #ED1C24 0%, #ED3F1C 100%));
-  color: var(--white-accent-color, #FFF);
-  inline-size: 100%;
+  color: var(--white-accent-color, #fff);
   text-align: center;
+  background: var(
+    --button-color-type-red,
+    linear-gradient(92deg, #ed1c24 0%, #ed3f1c 100%)
+  );
+  transition: all 0.1s ease-in-out;
   cursor: pointer;
-   transition: all 0.1s ease-in-out;
+  inline-size: 100%;
 }
 
 /* Конец  */
@@ -85,15 +94,15 @@
 /* Стилизация кнопки - белая  */
 
 .button-stilization--white {
-  border: 2px solid var(--border-main-color, #ED1C24);
+  border: 2px solid var(--border-main-color, #ed1c24);
   border-radius: 16px;
   padding-block: 18px;
-  background-color: var(--main-background-color, #fff);
-  color: var(--accent-text-color, #ED1C24);
-  inline-size: 100%;
+  color: var(--accent-text-color, #ed1c24);
   text-align: center;
+  background-color: var(--main-background-color, #fff);
+  transition: all 0.1s ease-in-out;
   cursor: pointer;
-   transition: all 0.1s ease-in-out;
+  inline-size: 100%;
 }
 
 /* Конец  */
@@ -104,15 +113,18 @@
   position: relative;
   display: inline;
 }
- 
+
 .decoration-line-red::after {
   content: "";
   position: absolute;
   bottom: -10px;
   left: 0;
-  width:100%;
+  width: 100%;
   height: 4px;
-  background: var(--button-color-type-red, linear-gradient(92deg, #ED1C24 0%, #ED3F1C 100%));
+  background: var(
+    --button-color-type-red,
+    linear-gradient(92deg, #ed1c24 0%, #ed3f1c 100%)
+  );
 }
 
 /* Конец  */
@@ -121,7 +133,7 @@
 
 .decoration-line-white {
   position: relative;
-  display: inline-block; 
+  display: inline-block;
 }
 
 .decoration-line-white::after {
@@ -129,7 +141,7 @@
   position: absolute;
   bottom: -3px;
   left: 0;
-  width:100%;
+  width: 100%;
   height: 2px;
   background-color: var(--main-background-color, #fff);
 }
@@ -146,18 +158,18 @@
 .icon-pdf::before {
   content: "PDF";
   position: absolute;
-  left: 0;
   top: 50%;
-  transform: translateY(-50%);
+  left: 0;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   width: 20px;
   height: 20px;
-  border: 1.5px solid var(--white-accent-color, #FFF);;
+  border: 1.5px solid var(--white-accent-color, #fff);
   border-radius: 6px;
-  font-size: 6px;
   font-weight: bold;
+  font-size: 6px;
+  transform: translateY(-50%);
 }
 
 /* Конец */
@@ -165,25 +177,25 @@
 /* Кнопка для выпадающего списка красная на белом фоне */
 
 .dropdown-button-red {
-  width: 26px;
-  height: 26px;
-  border-radius: 50%;
-  background-color: var(--main-background-color, #fff);
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background-color: var(--main-background-color, #fff);
 }
 
 .dropdown-button-red::after {
-  content: '';
+  content: "";
   display: block;
   width: 10px;
   height: 10px;
-  border-left: 2px solid var(--border-main-color, #ED1C24);
-  border-bottom: 2px solid var(--border-main-color, #ED1C24);
-  transform: rotate(-45deg);
+  border-bottom: 2px solid var(--border-main-color, #ed1c24);
+  border-left: 2px solid var(--border-main-color, #ed1c24);
   transition: transform 0.3s ease;
+  transform: rotate(-45deg);
 }
 
 .dropdown-list--decoration.open .dropdown-button-red::after {
@@ -208,9 +220,9 @@
   align-items: center;
   width: 63px;
   height: 63px;
-  border: 2px solid var(--border-main-color, #ED1C24);
+  border: 2px solid var(--border-main-color, #ed1c24);
   border-radius: 50%;
-  color: var(--accent-text-color, #ED1C24);
+  color: var(--accent-text-color, #ed1c24);
   font-size: 40px;
   background-color: var(--main-background-color, #fff);
   transform: translateX(-50%);
@@ -245,11 +257,54 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: 0%; 
-  height: 5px;
-  background: var(--button-color-type-red, linear-gradient(92deg, #ED1C24 0%, #ED3F1C 100%));
   z-index: 3;
+  width: 0%;
+  height: 5px;
+  background: var(
+    --button-color-type-red,
+    linear-gradient(92deg, #ed1c24 0%, #ed3f1c 100%)
+  );
   transition: width 0.1s ease-out;
+}
+
+/* Конец */
+
+
+/* Модальное окно при отправке заявки */
+
+.submitted-window[open] {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  padding: 50px;
+  transform: translate(-50%, -50%);
+  border-radius: 16px;
+  border: 2px solid  red;
+}
+
+.submitted-window::backdrop {
+  opacity: 0.75;
+  background-color: black;
+}
+
+.submitted-window__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  text-align: center;
+}
+
+.submitted-window__content-message {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+@media (width <=767px) {
+  .submitted-window[open] {
+  padding: 25px;
+  width: 75%;
+}
 }
 
 /* Конец */

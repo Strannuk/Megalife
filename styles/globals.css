@@ -9,8 +9,8 @@ html {
 }
 
 body {
+  max-width: 1440px;
   margin: 0 auto;
-  max-width: 1440px; 
 }
 
 h1,

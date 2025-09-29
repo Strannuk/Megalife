@@ -9,6 +9,21 @@ feedbackButtons.forEach(btn => {
 const form = document.querySelector('.feedback__form');
 form.addEventListener('submit', function(e) {
   e.preventDefault();
-  alert('Заявка отправлена!');
+
+  if (window.submitted__window) {
+    // показываем модальное окно
+    window.submitted__window.showModal();
+
+    // блокируем скролл страницы
+    document.body.style.overflow = 'hidden';
+
+    // возвращаем скролл при закрытии окна
+    window.submitted__window.addEventListener('close', () => {
+      document.body.style.overflow = '';
+    });
+  } else {
+    alert('Заявка отправлена!');
+  }
+
   form.reset();
 });
