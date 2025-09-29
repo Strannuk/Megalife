@@ -13,7 +13,7 @@
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background-color: #f23131;
+  background: var(--button-color-type-red, linear-gradient(92deg, #ED1C24 0%, #ED3F1C 100%));
   transform: translateY(-50%);
 }
 
@@ -26,8 +26,8 @@
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  box-shadow: 0 0 0 2px white;
-  background-color: #f23131;
+  box-shadow: 0 0 0 2px var(--white-accent-color, #FFF);
+  background: var(--button-color-type-red, linear-gradient(92deg, #ED1C24 0%, #ED3F1C 100%));
   transform: translateY(-50%);
 }
 
@@ -47,8 +47,8 @@
   top: 50%;
   width: 10px;
   height: 25px;
-  border-right: 2px solid red;
-  border-bottom: 2px solid red;
+  border-right: 2px solid var(--border-main-color, #ED1C24);
+  border-bottom: 2px solid var(--border-main-color, #ED1C24);
   transform: translateY(-80%) rotate(45deg);
 }
 
@@ -69,11 +69,11 @@
 /* Стилизация кнопки - красная  */
 
 .button-stilization--red {
-  border: 2px solid red;
+  border: 2px solid var(--border-main-color, #ED1C24);
   border-radius: 16px;
   padding-block: 18px;
-  background-color: red;
-  color: white;
+  background: var(--button-color-type-red, linear-gradient(92deg, #ED1C24 0%, #ED3F1C 100%));
+  color: var(--white-accent-color, #FFF);
   inline-size: 100%;
   text-align: center;
   cursor: pointer;
@@ -85,11 +85,11 @@
 /* Стилизация кнопки - белая  */
 
 .button-stilization--white {
-  border: 2px solid red;
+  border: 2px solid var(--border-main-color, #ED1C24);
   border-radius: 16px;
   padding-block: 18px;
-  background-color: white;
-  color:red;
+  background-color: var(--main-background-color, #fff);
+  color: var(--accent-text-color, #ED1C24);
   inline-size: 100%;
   text-align: center;
   cursor: pointer;
@@ -112,7 +112,7 @@
   left: 0;
   width:100%;
   height: 4px;
-  background: linear-gradient(92deg, #ed1c24 0%, #ed3f1c 100%);
+  background: var(--button-color-type-red, linear-gradient(92deg, #ED1C24 0%, #ED3F1C 100%));
 }
 
 /* Конец  */
@@ -131,7 +131,7 @@
   left: 0;
   width:100%;
   height: 2px;
-  background-color: white;
+  background-color: var(--main-background-color, #fff);
 }
 
 /* Конец  */
@@ -154,7 +154,7 @@
   justify-content: center;
   width: 20px;
   height: 20px;
-  border: 1.5px solid #fff;
+  border: 1.5px solid var(--white-accent-color, #FFF);;
   border-radius: 6px;
   font-size: 6px;
   font-weight: bold;
@@ -168,7 +168,7 @@
   width: 26px;
   height: 26px;
   border-radius: 50%;
-  background-color: white;
+  background-color: var(--main-background-color, #fff);
   position: relative;
   display: flex;
   justify-content: center;
@@ -180,8 +180,8 @@
   display: block;
   width: 10px;
   height: 10px;
-  border-left: 2px solid red;
-  border-bottom: 2px solid red;
+  border-left: 2px solid var(--border-main-color, #ED1C24);
+  border-bottom: 2px solid var(--border-main-color, #ED1C24);
   transform: rotate(-45deg);
   transition: transform 0.3s ease;
 }
@@ -208,11 +208,11 @@
   align-items: center;
   width: 63px;
   height: 63px;
-  border: 2px solid red;
+  border: 2px solid var(--border-main-color, #ED1C24);
   border-radius: 50%;
-  color: red;
+  color: var(--accent-text-color, #ED1C24);
   font-size: 40px;
-  background: white;
+  background-color: var(--main-background-color, #fff);
   transform: translateX(-50%);
 }
 
@@ -247,8 +247,8 @@
   left: 0;
   width: 0%; 
   height: 5px;
-  background-color: #ff0000; 
-  z-index: 9999;
+  background: var(--button-color-type-red, linear-gradient(92deg, #ED1C24 0%, #ED3F1C 100%));
+  z-index: 3;
   transition: width 0.1s ease-out;
 }
 

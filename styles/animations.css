@@ -1,6 +1,6 @@
 .header__informationBlock-navigation-list-item:hover {
-  color: red;
-  border-bottom: 2px solid red;
+  color: var(--accent-text-color, #ED1C24);
+  border-bottom: 2px solid var(--border-main-color, #ED1C24);
 }
 
 .header__informationBlock-navigation-list-item-link:focus{
@@ -9,8 +9,8 @@
 }
 
 .header__informationBlock-navigation-list-item-link:focus-visible{
-  color: red;
-  border-bottom: 4px solid red;
+  color: var(--accent-text-color, #ED1C24);
+  border-bottom: 4px solid var(--border-main-color, #ED1C24);
   padding-bottom:4px;
 }
 
@@ -19,8 +19,8 @@
 }
 
 .header__informationBlock-address-tel-number:hover {
-  text-decoration: underline 2px solid white;
- text-underline-offset: 5px; 
+  text-decoration: underline 2px solid var(--white-accent-color, #FFF);
+  text-underline-offset: 5px; 
 }
 
 .header__informationBlock-address-tel-number:focus {
@@ -28,32 +28,32 @@
 }
 
 .header__informationBlock-address-tel-number:focus-visible {
-  text-decoration: underline 2px solid white;
+text-decoration: underline 2px solid var(--white-accent-color, #FFF);
  text-underline-offset: 5px; 
 }
 
 .button-stilization--red:hover {
-  background-color: transparent;
-  border: red 2px solid;
-  color: red;
+  background: transparent;
+  border: var(--border-main-color, #ED1C24) 2px solid;
+  color: var(--accent-text-color, #ED1C24);
 }
 
 .button-stilization--red:focus-visible {
-  background-color: transparent;
-  border: red 2px solid;
-  color: red;
+  background: transparent;
+  border: var(--border-main-color, #ED1C24) 2px solid;
+  color: var(--accent-text-color, #ED1C24);
 }
 
 .button-stilization--white:hover {
-  background-color: red;
-  border: red 2px solid;
-  color: white;
+  background: var(--button-color-type-red, linear-gradient(92deg, #ED1C24 0%, #ED3F1C 100%));
+  border: var(--border-main-color, #ED1C24) 2px solid;
+  color: var(--white-accent-color, #FFF);
 }
 
 .button-stilization--white:focus-visible {
-  background-color: red;
-  border: red 2px solid;
-  color: white;
+  background: var(--button-color-type-red, linear-gradient(92deg, #ED1C24 0%, #ED3F1C 100%));
+  border: var(--border-main-color, #ED1C24) 2px solid;
+  color: var(--white-accent-color, #FFF);
 }
 
 .feedback__text-decoration:hover {
@@ -72,7 +72,7 @@
 }
 
 .dropdown-text-link:hover {
-  border-bottom: 2px solid red;
+  border-bottom: 2px solid var(--border-main-color, #ED1C24);
 }
 
 .dropdown-text-link:focus {
@@ -80,12 +80,12 @@
 }
 
 .dropdown-text-link:focus-visible {
-  border-bottom: 2px solid red;
+  border-bottom: 2px solid var(--border-main-color, #ED1C24);
 }
 
 .information__text-address-list-item-decoration:hover {
-  color:red;
-  border-bottom: 2px solid red;
+  color: var(--accent-text-color, #ED1C24);
+  border-bottom: 2px solid var(--border-main-color, #ED1C24);
 }
 
 .information__text-address-list-item-decoration:focus {
@@ -93,20 +93,20 @@
 }
 
 .information__text-address-list-item-decoration:focus-visible {
-  color:red;
-  border-bottom: 2px solid red;
+  color: var(--accent-text-color, #ED1C24);
+  border-bottom: 2px solid var(--border-main-color, #ED1C24);
 }
 
 .feedback__input:focus-visible {
-  outline: 2px solid red;
+  outline: 2px solid var(--border-main-color, #ED1C24);
 }
 
 .feedback__textarea:focus-visible {
-  outline: 2px solid red;
+  outline: 2px solid var(--border-main-color, #ED1C24);
 }
 
 .footer__contact-list-links:hover {
-  border-bottom: 2px solid white;
+  border-bottom: 2px solid var(--white-accent-color, #FFF);
 }
 
 .footer__contact-list-links:focus {
@@ -114,11 +114,11 @@
 }
 
 .footer__contact-list-links:focus-visible {
-  border-bottom: 2px solid white;
+  border-bottom: 2px solid var(--white-accent-color, #FFF);
 }
 
 .footer__documents-list-item-docs:hover {
- text-decoration: underline 2px solid white;
+ text-decoration: underline 2px solid var(--white-accent-color, #FFF);
  text-underline-offset: 5px; 
 }
 
@@ -127,7 +127,7 @@
 }
 
 .footer__documents-list-item-docs:focus-visible {
-   text-decoration: underline 2px solid white;
+   text-decoration: underline 2px solid var(--white-accent-color, #FFF);
  text-underline-offset: 5px; 
    
 }

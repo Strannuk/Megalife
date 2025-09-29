@@ -502,18 +502,22 @@
           </p>
         </div>
       </section>
-      <section class="information">
+      <section class="information" >
         <div class="information__map">
-          <script
-            async
-            src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A02f248f26ef41e8fff6e5e590913915aaf19cb1722cd089f22d5505d8cf2be13&amp;width=100%25&amp;height=613&amp;lang=ru_RU&amp;scroll=true"
-          ></script>
+          <iframe
+            data-src="https://yandex.ru/map-widget/v1/?um=constructor%3A02f248f26ef41e8fff6e5e590913915aaf19cb1722cd089f22d5505d8cf2be13&amp;source=constructor"
+            width="100%"
+            height="613"
+            style="border:0;"
+            loading="lazy"
+          ></iframe>
         </div>
         <div class="information__text">
           <img
             class="information__text-logo"
             src="./images/logowithtext.svg"
             alt="Мегалайф"
+            loading="lazy"
           />
           <h2 class="information__text-title">Наши контакты</h2>
           <address>
@@ -681,6 +685,7 @@
             class="footer__information-logo-image"
             src="./images/logo.svg"
             alt="Мегалайф"
+            loading="lazy"
           />
           <div class="footer__information-logo-text">
             <h2 class="footer__information-logo-text-title">megalife</h2>
@@ -747,8 +752,9 @@
         </ul>
       </div>
     </footer>
-    <script src="./script/dropdown.js"></script>
-    <script src="./script/feedbackButton.js"></script>
-    <script src="./script/scrollprogresbar.js"></script>
+    <script src="./script/YandexMap.js" async></script>
+    <script src="./script/dropdown.js" async></script>
+    <script src="./script/feedbackButton.js" async></script>
+    <script src="./script/scrollprogresbar.js" async></script>
   </body>
 </html>

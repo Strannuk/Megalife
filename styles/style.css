@@ -1,12 +1,12 @@
 .page {
   padding: 0.9375rem;
-  color: #0a0909;
+  color: var(--main-text-color, #0a0909);
   font-family: var(--Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif);
   font-weight: 500;
   font-size: 1.125rem;
   font-style: normal;
   line-height: normal;
-  background-color: #fff;
+  background-color: var(--main-background-color, #fff);
 }
 
 .header {
@@ -30,17 +30,18 @@
   flex-direction: column;
   justify-content: space-between;
   padding: 6.25rem;
+  gap:200px;
 }
 
 .header__informationBlock-logo {
   display: flex;
   align-items: center;
   gap: 0.9375rem;
-  cursor:auto;
+  cursor: auto;
 }
 
 .header__informationBlock-title {
-  color: red;
+  color: var(--accent-text-color, #ED1C24);
 }
 
 .header__informationBlock-navigation-list {
@@ -55,12 +56,12 @@
 
 .header__informationBlock-address-tel {
   margin-top: 40px;
-  color: white;
+  color: var(--white-accent-color, #fff);
 }
 
 .header__informationBlock-address-tel-number {
   padding: 20px 45px;
-  background-color: red;
+  background: var(--button-color-type-red, linear-gradient(92deg, #ED1C24 0%, #ED3F1C 100%));
   border-radius: 16px;
 }
 
@@ -102,10 +103,10 @@
   flex-direction: column;
   align-items: center;
   gap: 27px;
-  border: 2px solid #ebebeb;
+  border: 2px solid var(--accent-gray-color,#ebebeb);
   border-radius: 16px;
   padding: 25px;
-  background-color: white;
+  background-color: var(--main-background-color, #fff);
 }
 
 .why-us__list-item::before {
@@ -145,7 +146,7 @@
 .services__header {
   border-radius: 32px;
   padding: 76px 100px;
-  color: #fff;
+  color: var(--white-accent-color, #fff);
   background-color: red;
   background-image: url("../images/pattern.svg");
   background-position: center;
@@ -259,7 +260,7 @@
 }
 
 .paid__tarifs-list-item {
-  border: 2px solid #ebebeb;
+  border: 2px solid var(--accent-gray-color,#ebebeb);
   border-radius: 16px;
   padding: 50px;
 }
@@ -281,7 +282,7 @@
 }
 
 .paid__tarifs-card-price {
-  color: red;
+  color: var(--accent-text-color, #ED1C24);
 }
 
 .paid__tarifs-card-list {
@@ -308,14 +309,14 @@
 }
 
 .tarifs-card-pro {
-  color: white;
+  color: var(--white-accent-color, #fff);
 }
 
 .tarifs-card-container-pro {
   border-radius: 16px;
   padding: 15px;
-  color: white;
-  background: red;
+  color: var(--white-accent-color, #fff);
+  background: var(--button-color-type-red, linear-gradient(92deg, #ED1C24 0%, #ED3F1C 100%));
 }
 
 .tarifs-card-title-pro {
@@ -368,7 +369,7 @@
 }
 
 .dropdown-text-link {
-  color: red;
+  color: var(--accent-text-color, #ED1C24);
 }
 
 .show-dropdown {
@@ -398,7 +399,7 @@
   gap: 15px;
   max-width: 357px;
   padding: 50px;
-  background: #fff;
+  background: var(--main-background-color, #fff);
 }
 
 .information__text-logo {
@@ -439,21 +440,21 @@
 }
 
 .feedback__input {
-  border: 1px solid #ebebeb;
+  border: 1px solid var(--accent-gray-color,#ebebeb);
   border-radius: 16px;
   padding: 25px;
-  background: #fff;
+  background-color: var(--main-background-color, #fff);
 }
 
 .feedback__textarea {
   grid-column: 1/-1;
   height: 136px;
-  border: 1px solid #ebebeb;
+  border: 1px solid var(--accent-gray-color,#ebebeb);
   border-radius: 16px;
   padding: 25px;
   font-family: Montserrat;
   font-size: 18px;
-  background: #fff;
+  background-color: var(--main-background-color, #fff);
   resize: none;
 }
 
@@ -493,7 +494,7 @@
   gap: 15px;
   border-radius: 16px;
   padding: 25px;
-  background-color: white;
+  background-color: var(--main-background-color, #fff);
 }
 
 .footer__information-logo-text {
@@ -514,7 +515,7 @@
 }
 
 .footer__contact {
-  color: white;
+  color: var( --white-accent-color, #FFF);
 }
 
 .footer__contact-list {
@@ -526,7 +527,7 @@
 
 .footer__documents {
   padding-inline-start: 5px;
-  color: white;
+  color: var( --white-accent-color, #FFF);
 }
 
 .footer__documents-title {
@@ -734,6 +735,12 @@
     margin-top: 105px;
   }
 
+  .information__text {
+    background-color: var(--main-background-color, #fff);
+    bottom:50px;
+    left:10px;
+  }
+
   .footer {
     gap: 90px;
   }
@@ -901,6 +908,7 @@
   .information__map {
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0;
+    height: 300px;
   }
 
   .information__text {

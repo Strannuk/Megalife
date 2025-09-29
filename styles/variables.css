@@ -1,4 +1,10 @@
 :root {
   --Montserrat: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  
+  --main-background-color: #FFF;
+  --accent-text-color: #ED1C24;
+  --white-accent-color: #FFF;
+  --button-color-type-red: linear-gradient(92deg, #ED1C24 0%, #ED3F1C 100%);
+  --border-main-color: #ED1C24;
+  --accent-gray-color: #ebebeb;
+  --main-text-color: #0a0909;
 } 
