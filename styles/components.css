@@ -269,6 +269,21 @@
 
 /* Конец */
 
+/* Ошибка  */
+
+.error {
+  border-color: #f23131;
+  box-shadow: 0 0 0 4px rgba(242,49,49,0.4);
+}
+
+.error-message {
+  color: #f23131;
+  font-size: 18px;
+  margin-top: 8px;
+  line-height: 1;
+}
+
+/* Конец */
 
 /* Модальное окно при отправке заявки */
 
